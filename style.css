@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital@1&display=swap');
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    perspective: 1000px;
+}
+
+.container {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card {
+    transform-style: preserve-3d;
+    min-height: 80vh;
+    width: 560px;
+    border-radius: 30px;
+    padding: 0 50px;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
+}
+
+.sneaker {
+    min-height: 35vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sneaker img {
+    width: 300px;
+    z-index: 2;
+    transition: all 0.75s ease-out;
+}
+
+.circle {
+    width: 250px;
+    height: 250px;
+    background: linear-gradient(
+        to right,
+        rgba(76, 79, 88, 0.75),
+        rgba(120, 27, 38, 0.75)
+    );
+    position: absolute;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.info h1 {
+    font-size: 40px;
+    transition: all 0.75s ease-out;
+}
+.info h3 {
+    font-size: 20px;
+    padding: 30px 0;
+    color: #585858;
+    font-weight: lighter;
+    margin: 0 0 25px 0;
+    transition: all 0.75s ease-out;
+}
+
+.sizes {
+    display: flex;
+    justify-content: space-around;
+    transition: all 0.75s ease-out;
+}
+
+.sizes > button {
+    padding: 8px 30px;
+    background: none;
+    border: none;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #585858;
+    transition: all 0.5s;
+}
+
+.sizes > .active, button:hover {
+    background: #585858;
+    color: white;
+}
+
+.purchase {
+    margin-top: 80px;
+}
+.purchase > button:hover {
+    background-color: rgba(100, 23, 32, 0.95)
+}
+
+.purchase button {
+    width: 100%;
+    padding: 20px 0;
+    background-color: rgba(120, 27, 38, 0.75);
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 30px;
+    font-weight: bolder;
+    transition: all 0.75s ease-out;
+}
